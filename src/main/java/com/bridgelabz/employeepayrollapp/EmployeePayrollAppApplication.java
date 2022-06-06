@@ -7,6 +7,7 @@ import springfox.documentation.builders.RequestHandlerSelectors;
 import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
+import org.springframework.context.ApplicationContext;
 
 
 import lombok.extern.slf4j.Slf4j;
@@ -17,7 +18,7 @@ public class EmployeePayrollAppApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(EmployeePayrollAppApplication.class, args);
-        log.info("EmployeePayRoll App  started");
+        log.info("Employee Payroll App Started in {} Environment", Context.getEnvironment().getProperty("environment"));
     }
     @Bean
     public Docket productApi() {
