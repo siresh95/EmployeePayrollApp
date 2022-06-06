@@ -1,0 +1,14 @@
+2022-06-07 01:03:43.489  INFO 12704 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : Starting EmployeePayrollAppApplication using Java 18.0.1.1 on MSI with PID 12704 (C:\Users\singh\project\EmployeePayrollApp\target\classes started by singh in C:\Users\singh\project\EmployeePayrollApp)
+2022-06-07 01:03:43.490 DEBUG 12704 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : Running with Spring Boot v2.7.0, Spring v5.3.20
+2022-06-07 01:03:43.490  INFO 12704 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : No active profile set, falling back to 1 default profile: "default"
+2022-06-07 01:03:45.132  WARN 12704 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-06-07 01:03:45.794  WARN 12704 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-07 01:03:46.252  INFO 12704 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : Started EmployeePayrollAppApplication in 3.1 seconds (JVM running for 3.795)
+2022-06-07 01:03:46.254  INFO 12704 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : EmployeePayRoll App  started
+2022-06-07 01:03:52.723  INFO 17112 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : Starting EmployeePayrollAppApplication using Java 18.0.1.1 on MSI with PID 17112 (C:\Users\singh\project\EmployeePayrollApp\target\classes started by singh in C:\Users\singh\project\EmployeePayrollApp)
+2022-06-07 01:03:52.725 DEBUG 17112 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : Running with Spring Boot v2.7.0, Spring v5.3.20
+2022-06-07 01:03:52.725  INFO 17112 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : No active profile set, falling back to 1 default profile: "default"
+2022-06-07 01:03:54.171  WARN 17112 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-06-07 01:03:54.695  WARN 17112 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-07 01:03:55.132  INFO 17112 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : Started EmployeePayrollAppApplication in 2.724 seconds (JVM running for 3.341)
+2022-06-07 01:03:55.135  INFO 17112 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : EmployeePayRoll App  started
