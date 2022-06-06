@@ -446,3 +446,12 @@ Caused by: java.sql.SQLException: Access denied for user 'host'@'localhost' (usi
 2022-06-07 03:48:31.801  INFO 15316 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : Started EmployeePayrollAppApplication in 2.864 seconds (JVM running for 3.467)
 2022-06-07 03:48:31.801  INFO 15316 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : Employee Payroll App Started in null Environment
 2022-06-07 03:48:31.801  INFO 15316 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : Employee Payroll DB User is root Environment
+2022-06-07 04:00:34.619  INFO 20696 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : Starting EmployeePayrollAppApplication using Java 18.0.1.1 on MSI with PID 20696 (C:\Users\singh\project\EmployeePayrollApp\target\classes started by singh in C:\Users\singh\project\EmployeePayrollApp)
+2022-06-07 04:00:34.619 DEBUG 20696 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : Running with Spring Boot v2.6.2, Spring v5.3.14
+2022-06-07 04:00:34.619  INFO 20696 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : No active profile set, falling back to default profiles: default
+2022-06-07 04:00:35.750  WARN 20696 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : This listener must only be nested within Server elements, but is in [TomcatEmbeddedContext].
+2022-06-07 04:00:36.078  WARN 20696 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-06-07 04:00:36.625  WARN 20696 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-07 04:00:37.078  INFO 20696 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : Started EmployeePayrollAppApplication in 2.819 seconds (JVM running for 3.437)
+2022-06-07 04:00:37.078  INFO 20696 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : Employee Payroll App Started in null Environment
+2022-06-07 04:00:37.078  INFO 20696 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : Employee Payroll DB User is root Environment
