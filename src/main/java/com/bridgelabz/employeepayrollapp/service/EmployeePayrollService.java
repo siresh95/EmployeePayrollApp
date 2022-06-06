@@ -5,41 +5,47 @@ import java.util.ArrayList;
 import java.util.List;
 import org.springframework.stereotype.Service;
 import com.bridgelabz.employeepayrollapp.dto.EmployeePayrollDTO;
+import com.bridgelabz.employeepayrollapp.exception.EmployeePayrollException;
 import com.bridgelabz.employeepayrollapp.model.EmployeePayrollData;
 
 @Service
 class EmployeePayrollService implements IEmploeePayrollService {
+    private List<EmployeePayrollData> employeePayrollList = new ArrayList<>();
 
     @Override
     public List<EmployeePayrollData> getEmployeePayrollData() {
-        List<EmployeePayrollData> empDataList = new ArrayList<>();
-        empDataList.add(new EmployeePayrollData(1, new EmployeePayrollDTO("Sakshi", 5000)));
-        return empDataList;
+
+        return employeePayrollList;
     }
 
     @Override
     public EmployeePayrollData getEmployeePayrollDataById(int empId) {
-        EmployeePayrollData empData = null;
-        empData = new EmployeePayrollData(1, new EmployeePayrollDTO("Reshma", 40000));
-        return empData;
+        return employeePayrollList.stream().filter(empData -> empData.getEmployeeId() == empId)
+                .findFirst().orElseThrow(() -> new EmployeePayrollException("Employee Not found"));
+
     }
 
     @Override
     public EmployeePayrollData createEmployeePayrollData(EmployeePayrollDTO empPayrollDTO) {
         EmployeePayrollData empData = null;
-        empData = new EmployeePayrollData(1, empPayrollDTO);
+        empData = new EmployeePayrollData(employeePayrollList.size() + 1, empPayrollDTO);
+        employeePayrollList.add(empData);
         return empData;
     }
 
     @Override
     public EmployeePayrollData updateEmployeePayrollData(int empId, EmployeePayrollDTO empPayrollDTO) {
-        EmployeePayrollData empData = null;
-        empData = new EmployeePayrollData(1, empPayrollDTO);
+        EmployeePayrollData empData = this.getEmployeePayrollDataById(empId);
+        empData.setName(empPayrollDTO.name);
+        empData.setSalary(empPayrollDTO.salary);
+        employeePayrollList.set(empId - 1, empData);
         return empData;
+
     }
 
     @Override
     public void deleteEmployeePayrollData(int empId) {
+        employeePayrollList.remove(empId);
 
     }
 }
