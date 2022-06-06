@@ -14,11 +14,13 @@ import lombok.extern.slf4j.Slf4j;
 @SpringBootApplication
 @EnableSwagger2
 @Slf4j
+
 public class EmployeePayrollAppApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(EmployeePayrollAppApplication.class, args);
-        log.info("Employee Payroll App Started in {} Environment", Context.getEnvironment().getProperty("environment"));
+        ApplicationContext context = SpringApplication.run(EmployeePayrollAppApplication.class, args);
+        log.info("Employee Payroll App Started in {} Environment", context.getEnvironment().getProperty("environment"));
+        log.info("Employee Payroll DB User is {} Environment",context.getEnvironment().getProperty("spring.datasource.username"));
     }
     @Bean
     public Docket productApi() {
