@@ -819,3 +819,12 @@ java.lang.IndexOutOfBoundsException: Index 17 out of bounds for length 17
 	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
 
 2022-06-07 17:05:10.054  WARN 11208 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4h46m14s929ms602µs600ns).
+2022-06-07 18:08:39.440  INFO 15596 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : Starting EmployeePayrollAppApplication using Java 18.0.1.1 on MSI with PID 15596 (C:\Users\singh\project\EmployeePayrollApp\target\classes started by singh in C:\Users\singh\project\EmployeePayrollApp)
+2022-06-07 18:08:39.444 DEBUG 15596 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : Running with Spring Boot v2.6.2, Spring v5.3.14
+2022-06-07 18:08:39.445  INFO 15596 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : No active profile set, falling back to default profiles: default
+2022-06-07 18:08:42.553  WARN 15596 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : This listener must only be nested within Server elements, but is in [TomcatEmbeddedContext].
+2022-06-07 18:08:43.543  WARN 15596 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-06-07 18:08:44.641  WARN 15596 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-07 18:08:45.451  INFO 15596 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : Started EmployeePayrollAppApplication in 6.507 seconds (JVM running for 7.852)
+2022-06-07 18:08:45.455  INFO 15596 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : Employee Payroll App Started in null Environment
+2022-06-07 18:08:45.456  INFO 15596 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : Employee Payroll DB User is root Environment
