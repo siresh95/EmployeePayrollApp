@@ -1,5 +1,4 @@
 package com.bridgelabz.employeepayrollapp.controller;
-
 import java.util.List;
 
 import javax.validation.Valid;
@@ -20,8 +19,11 @@ import com.bridgelabz.employeepayrollapp.dto.ResponseDTO;
 import com.bridgelabz.employeepayrollapp.model.EmployeePayrollData;
 import com.bridgelabz.employeepayrollapp.service.IEmploeePayrollService;
 
+import lombok.extern.slf4j.Slf4j;
+
 @RestController
 @RequestMapping("/employeePayrollservice")
+@Slf4j
 /*
  * @RequestMapping:Used to set the class level URL.
  */
@@ -59,6 +61,7 @@ public class EmployeePayrollController {
      */
     @PostMapping("/create")
     public ResponseEntity<ResponseDTO> addEmployeePayrollData(@Valid @RequestBody EmployeePayrollDTO empPayrollDTO) {
+        log.debug("Employee DTO:" + empPayrollDTO.toString());
         EmployeePayrollData empData = null;
         empData = employeePayrollService.createEmployeePayrollData(empPayrollDTO);
         ResponseDTO respDTO = new ResponseDTO("Create Employee PayrollData:", empData);
